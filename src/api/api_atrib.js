@@ -1,7 +1,7 @@
 export const ListaServicios = async () => {
     try {
       // Intenta cerrar sesión en el backend
-      let response = await fetch("http://127.0.0.1:8000/api/servicios/", {
+      let response = await fetch("https://web-production-28f99.up.railway.app/api/servicios/", {
         method: "GET",
       });
   
