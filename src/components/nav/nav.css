@@ -1,0 +1,16 @@
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 17ch;}
+}
+
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+.animate-typewriter {
+    display: inline-block;
+    border-right: 0.15em solid black; /* El cursor */
+    white-space: nowrap;
+    animation: typewriter 3s steps(17) 1s 1 normal both, blinkCursor 0.5s infinite step-end alternate;
+    overflow: hidden;
+}

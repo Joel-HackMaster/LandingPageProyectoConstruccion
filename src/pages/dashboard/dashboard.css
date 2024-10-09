@@ -1,0 +1,27 @@
+.section_image{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portafolio-39d79.appspot.com/o/landingPageContruction%2Fexcavator_fondo.jpg?alt=media&token=f64229fb-9f01-4691-8855-dcd0ebe6a44a');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section_image2{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portafolio-39d79.appspot.com/o/landingPageContruction%2Ffondo.jpg?alt=media&token=593a78b2-9fe6-4d1f-a725-49b5ace3a4c4');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.image-container{
+    opacity: 0;
+    transform: translateY(20px); /* Las imágenes comienzan ligeramente desplazadas hacia abajo */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Animación para transform y opacity */
+
+}
+  
+.image-container.show {
+    opacity: 1; /* Cuando están en la vista, mostramos las imágenes */
+    transform: translateY(0); /* Deslizamos las imágenes hacia su posición original */
+}
