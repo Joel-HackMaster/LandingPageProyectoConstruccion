@@ -27,6 +27,7 @@ export default function nav() {
 
     const handleNavigation = (event, path) => {
         event.preventDefault();
+        setMobileMenuOpen(false);
         navigate(path);
     };
 
